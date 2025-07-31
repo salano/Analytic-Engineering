@@ -3,7 +3,8 @@ In this section we explore repeated analysis (growth, survivor and funnel analys
 Note: growth and survivor analyses are best used on subscrption data.
 The data definition used for growth and survivor analysis is below.
 
-`create table exercises.cust_growth_accounting(
+```
+create table exercises.cust_growth_accounting(
 cust_id text,
 first_active_date date,
 last_active_date date,
@@ -13,6 +14,7 @@ dates_active date[],
 date date,
 primary key (cust_id, date)
 );
+```
 
 The definition detail -
 
@@ -43,15 +45,15 @@ Daily active states are classified as
 -growth rate = new + resurrected -churned
 
 We see the customers state on any given day from the table.
-![Alt text](Repeat Analysis/cust_states.png)
+![Alt text](cust_states.png)
 
 In addition, we can look at the states summarised by day to to understand our customers growth over time.
-![Alt text](Repeat Analysis/Daily_states.png)
+![Alt text](Daily_states.png)
 
 Survivor analysis:
 
 We can examine the survivorship of over customers. From the data we can see that of 710 customers only 0.0014% of them makes a further purchase after 2 days of their initial purchase.
-![Alt text](Repeat Analysis/Pct_active.png)
+![Alt text](Pct_active.png)
 
 We can further analyse the data to examine survivorship by the day of the week. Those customers who made a purchase on sunday (dow = 0), only 1 (0.125%) of them made a subsequent purchase after 12 days of their initial purchase.
-![Alt text](Repeat Analysis/Pct_active_dow.png)
+![Alt text](Pct_active_dow.png)
