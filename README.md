@@ -1,8 +1,8 @@
-This repository use data from the 'link' to demonstrate data engineering and analytics concepts for general business and data analyses.
+This repository uses data from this link - 'https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&page=4&pageSize=5' to demonstrate data engineering and analytics concepts for general business and data analyses.
 
 Note: no code will be shown in this repository except for the data definition.
 
-The concepts demonstrated was developed using the Postgres object relational database. Postgres was chosen because it supports objects and array data types and makes implemetation easier.
+The concepts demonstrated were developed using the Postgres object relational database. Postgres was chosen because it supports objects and array data types and makes implemetation easier.
 
 Concepts covered in this repository:
 .1 Cumulative data design for compact storage and analysis

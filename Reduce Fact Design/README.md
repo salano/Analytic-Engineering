@@ -1,4 +1,4 @@
-In this section we explore the reduce fact data modelling.
+In this section we explore the reducing fact data modelling.
 
 The model used in this section
 
@@ -20,7 +20,7 @@ month_start - the start of the month in which the transaction was done
 metric_name - the name of the mertic being measured
 metric_array - the mertic value sorted by day.
 
-In this design if no purchase were done on a given day for a customer, we store 0 as the day value.
+In this design if no purchases were done on a given day for a customer, we store 0 as the day value.
 
 For this exercise we populated the array_metrics table with one month of data and we measure the number of orders placed as the metrics.
 ![Alt text](rf.png)

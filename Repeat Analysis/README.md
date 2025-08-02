@@ -1,6 +1,6 @@
-In this section we explore repeated analysis (growth, survivor and funnel analysis)
+In this section we explore repeated analysis (growth and survivor)
 
-Note: growth and survivor analyses are best used on subscrption data.
+Note: growth and survivor analyses are best used on subscrption data. However, for this excercise, we use the shopping data.
 The data definition used for growth and survivor analysis is below.
 
 ```
