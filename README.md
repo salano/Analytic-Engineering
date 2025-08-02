@@ -1,4 +1,4 @@
-This repository uses data from this link - 'https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&page=4&pageSize=5' to demonstrate data engineering and analytics concepts for general business and data analyses.
+This repository uses the 'Global Electronics Retailer' data from this link - 'https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&page=4&pageSize=5' to demonstrate data engineering and analytics concepts for general business and data analyses.
 
 Note: no code will be shown in this repository except for the data definition.
 
