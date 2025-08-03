@@ -33,16 +33,16 @@ We then determine the last stage in the funnel where the user drop off.
 We can now summary the users by the stage they drop off.
 ![Alt text](page_user_summary.png)
 
-Of the 90400 users
+Of the 90400 users <br />
 
-45200 reached the home page and didn't proceed further.
-5578 reached the payment page ( 1-(payment page/(home_page users+search_page users+payment_page users)) 94% drop off from the home page)
-452 reached to payment confirmation page which represents a (452/94000) 4.8% conversion rate.
+45200 reached the home page and didn't proceed further. <br />
+5578 reached the payment page ( 1-(payment page/(home_page users+search_page users+payment_page users)) 94% drop off from the home page) <br />
+452 reached to payment confirmation page which represents a (452/94000) 4.8% conversion rate. <br />
 
-Recommendations:
-improve Usability on home and search pages
-Simplify payment page
-Run A/B tests on home and search page layouts
+Recommendations: <br />
+improve Usability on home and search pages <br />
+Simplify payment page <br />
+Run A/B tests on home and search page layouts <br />
 
 At the device level
 ![Alt text](device_summary.png)
@@ -56,6 +56,6 @@ Finally,
 We can perform some group aggregation on the combined data.
 ![Alt text](group_aggregation.png)
 
-We can observed that we have almost the same amount female users as male.
-Desktop users (60200) double Mobile users (30200).
-Females and males use Desktop and Mobile devices at the same rate.
+We can observed that we have almost the same amount female users as male. <br />
+Desktop users (60200) double Mobile users (30200). <br />
+Females and males use Desktop and Mobile devices at the same rate. <br />

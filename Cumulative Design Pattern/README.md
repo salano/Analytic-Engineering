@@ -23,12 +23,12 @@ create type Exercises.order_info as (
 create type Exercises.customer_class as enum ('regular','moderate shopper','bulk buyer');
 ```
 
-#Customers are classifed as follows:
-.1 Customers with more than with 20 or more monthly orders are 'bulk buyer'.
-.2 Customers with orders greater than 10 and less than 21 per month are 'moderate shopper'
-.3 Customers with 9 or less orders are regular shoppers
+#Customers are classifed as follows: <br />
+.1 Customers with more than with 20 or more monthly orders are 'bulk buyer'. <br />
+.2 Customers with orders greater than 10 and less than 21 per month are 'moderate shopper' <br />
+.3 Customers with 9 or less orders are regular shoppers <br />
 
-# The table use to show the temporal table (cumulative design)
+# The table use to show the temporal table (cumulative design) <br />
 
 ```
 
@@ -46,17 +46,17 @@ create table Exercises.temp_dim_customers(
 );
 ```
 
-data definition
-cust_id - customer identifier
-cust_name - customer fullname
-cust_gender - customer gender
-cust_country - customer country
-cust_dob - customer date of birth
-customer_category - customer classification/category
-cust_info - list of customers order details
-month_num - A month number representing the month of purchasing starting from the begining of the analysis.
+data definition <br />
+cust_id - customer identifier <br />
+cust_name - customer fullname <br />
+cust_gender - customer gender <br />
+cust_country - customer country <br />
+cust_dob - customer date of birth <br />
+customer_category - customer classification/category <br />
+cust_info - list of customers order details <br />
+month_num - A month number representing the month of purchasing starting from the begining of the analysis. <br />
 
-The compact customer table
+The compact customer table <br />
 
 ![Alt text](cm_part1.png)
 ![Alt text](cm_part2.png)
@@ -98,8 +98,8 @@ We then populate the table with one month of customers' orders data from the sal
 We can use this data to analyse the customers' order pattern over the last day, week, month by computing the following dataset from the 'cust_cumulated' data.
 ![Alt text](cust_purchase_analysis.png)
 
--The 'bits' column contains a series of bit values with each value representing if a purchase was made by the customer on a given day. The days are numbered backwards with the leftmost value representing the last day in the month (0 - no purchase, 1 - purchase).
--The 'bit_count' column indicates the number of purchases made over the month by the customer.
--The 'dim_as_mthly_purchase' column indicates whether a purchase was made in the month by the customer.
--The 'dim_weekly_purchase' column indicates whether a purchase was made in the last week in the month by the customer.
--The 'dim_daily_purchase' column indicates whether a purchase was made on the last day in the month by the customer.
+-The 'bits' column contains a series of bit values with each value representing if a purchase was made by the customer on a given day. The days are numbered backwards with the leftmost value representing the last day in the month (0 - no purchase, 1 - purchase). <br />
+-The 'bit_count' column indicates the number of purchases made over the month by the customer. <br />
+-The 'dim_as_mthly_purchase' column indicates whether a purchase was made in the month by the customer. <br />
+-The 'dim_weekly_purchase' column indicates whether a purchase was made in the last week in the month by the customer. <br />
+-The 'dim_daily_purchase' column indicates whether a purchase was made on the last day in the month by the customer. <br />

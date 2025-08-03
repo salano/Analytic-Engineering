@@ -16,33 +16,33 @@ primary key (cust_id, date)
 );
 ```
 
-The definition detail -
+The definition detail - <br />
 
-cust_id - customer identifier
-first_active_date - first active/order date
-last_active_date - last active/order date
-daily_active_state - daily active state of customer
-weekly_active_state - weelly active state of customer
-dates_active - list of active/order dates of the customer
-date date - active/order date
+cust_id - customer identifier <br />
+first_active_date - first active/order <br />
+last_active_date - last active/order <br />
+daily_active_state - daily active state of customer <br />
+weekly_active_state - weelly active state of customer <br />
+dates_active - list of active/order dates of the customer <br />
+date date - active/order <br />
 
-The customers state is defined below.
+The customers state is defined below. <br />
 
-`new (didnt exist yesterday, active today)
--retained (active yesterday, active today)
--churned(active yesterday, inactive today)
--resurrected(inactive yesterday, active today)
--stale(inactive yesterday, inactive today)
+`new (didnt exist yesterday, active today) <br />
+-retained (active yesterday, active today) <br />
+-churned(active yesterday, inactive today) <br />
+-resurrected(inactive yesterday, active today) <br />
+-stale(inactive yesterday, inactive today) <br />
 
-Daily active states are classified as
--customer didn't exist yesterday, but exist today (new)
--customer was last active yesterday and is active today (retained)
--customer wasn't active yesterday, but active today (ressurrected)
--customer made no purchases today, but purchases today (churn)
--customer is inactive for more than 2 days (stale)
+Daily active states are classified as <br />
+-customer didn't exist yesterday, but exist today (new) <br />
+-customer was last active yesterday and is active today (retained) <br />
+-customer wasn't active yesterday, but active today (ressurrected) <br />
+-customer made no purchases today, but purchases today (churn) <br />
+-customer is inactive for more than 2 days (stale) <br />
 
--active customer (new, retained, resurrected)
--growth rate = new + resurrected -churned
+-active customer (new, retained, resurrected) <br />
+-growth rate = new + resurrected -churned <br />
 
 We see the customers state on any given day from the table.
 ![Alt text](cust_states.png)
@@ -50,7 +50,7 @@ We see the customers state on any given day from the table.
 In addition, we can look at the states summarised by day to to understand our customers growth over time.
 ![Alt text](Daily_states.png)
 
-Survivor analysis:
+Survivor analysis: <br />
 
 We can examine the survivorship of over customers. From the data we can see that of 710 customers only 0.0014% of them makes a further purchase after 2 days of their initial purchase.
 ![Alt text](Pct_active.png)

@@ -13,12 +13,12 @@ primary key(cust_id, month_start, metric_name)
 
 ```
 
-#The definition of the table for the data
+#The definition of the table for the data <br />
 
-cust_id - customer identifier
-month_start - the start of the month in which the transaction was done
-metric_name - the name of the mertic being measured
-metric_array - the mertic value sorted by day.
+cust_id - customer identifier <br />
+month_start - the start of the month in which the transaction was done <br />
+metric_name - the name of the mertic being measured <br />
+metric_array - the mertic value sorted by day. <br />
 
 In this design if no purchases were done on a given day for a customer, we store 0 as the day value.
 
