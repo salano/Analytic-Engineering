@@ -71,3 +71,35 @@ Using this table design we can also expand the customers records to display in a
 Further, we can using this cummulate design to check any customers growth between any period. In this example we measure growth using the value of the first purchase and the last purchase and the percentage growth in purchase value. EG We can see Karen Jones first purchase value was $11 and her last was $43,506.8 which represents a growth of almost 4000%.
 
 ![Alt text](cm_growth.png)
+
+We can also use the cumulative design pattern to analyse customers daily, weekly and monthly order patterns.
+
+```
+
+create table exercises.cust_cumulated(
+	cust_id text,
+	----list of dates in the past where the user was active
+	purchase_dates date[],
+	--date processing
+	date date,
+	primary key (cust_id, date)
+);
+```
+
+We create the above data/table definition to store customer daily orders.
+The table definition is as follows:
+cust_id -customer identifier
+purchase_dates - list of customer purchases
+date - date of the month
+
+We then populate the table with one month of customers' orders data from the sales table data.
+![Alt text](purchase_dates.png)
+
+We can use this data to analyse the customers' order pattern over the last day, week, month by computing the following dataset from the 'cust_cumulated' data.
+![Alt text](cust_purchase_analysis.png)
+
+-The 'bits' column contains a series of bit values with each value representing if a purchase was made by the customer on a given day. The days are numbered backwards with the leftmost value representing the last day in the month (0 - no purchase, 1 - purchase).
+-The 'bit_count' column indicates the number of purchases made over the month by the customer.
+-The 'dim_as_mthly_purchase' column indicates whether a purchase was made in the month by the customer.
+-The 'dim_weekly_purchase' column indicates whether a purchase was made in the last week in the month by the customer.
+-The 'dim_daily_purchase' column indicates whether a purchase was made on the last day in the month by the customer.
